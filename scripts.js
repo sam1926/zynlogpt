@@ -40,6 +40,17 @@ onReady(() => {
   }
 
   /* ------------------------------------------------
+     Custom Cursor with Trailing Effect
+  -------------------------------------------------- */
+  const cursorEl = document.getElementById('cursor');
+  if (cursorEl) {
+    document.body.classList.add('hide-cursor');
+    window.addEventListener('mousemove', e => {
+      gsap.to(cursorEl, { x: e.clientX, y: e.clientY, duration: 0.2 });
+    });
+  }
+
+  /* ------------------------------------------------
      Smooth Anchor Scrolling
   -------------------------------------------------- */
   $$("a[href^='#']").forEach(anchor => {
@@ -218,6 +229,32 @@ onReady(() => {
   animateSection('#about', { y: 50 });
   animateSection('#testimonials', { y: 50 });
   animateSection('#contact', { y: 50 });
+
+  /* ------------------------------------------------
+     Portfolio Hover 3D Animation
+  -------------------------------------------------- */
+  $$('.portfolio-item').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      gsap.to(item, { rotateY: 15, rotateX: -10, duration: 0.4 });
+    });
+    item.addEventListener('mouseleave', () => {
+      gsap.to(item, { rotateY: 0, rotateX: 0, duration: 0.4 });
+    });
+  });
+
+  /* ------------------------------------------------
+     Timeline Scroll Animations
+  -------------------------------------------------- */
+  $$('.timeline-item').forEach(item => {
+    gsap.from(item, {
+      opacity: 0,
+      x: -40,
+      scrollTrigger: {
+        trigger: item,
+        start: 'top 90%'
+      }
+    });
+  });
 
   /* ------------------------------------------------
      Typewriter Effect for Hero Text (simple version)

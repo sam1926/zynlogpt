@@ -185,11 +185,12 @@ header a:hover {
   transform: translateY(-4px);
 }
 .service-icon {
-  width: 3rem;
-  height: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
   color: var(--color-secondary);
 }
 .service-title {
@@ -234,6 +235,8 @@ header a:hover {
   border-radius: 1.5rem;
   overflow: hidden;
   border: 1px solid #e5e7eb;
+  transform-style: preserve-3d;
+  transition: transform var(--transition-speed);
 }
 .portfolio-item img {
   width: 100%;
@@ -491,6 +494,23 @@ footer .social-links {
   opacity: 1;
   pointer-events: auto;
 }
+
+/*
+  Custom cursor
+==================================================*/
+#cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 9999px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+body.hide-cursor { cursor: none; }
 
 /*
   Apple-inspired slick look
