@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZynloMedia | Social Media Marketing Brisbane</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#fafafa] text-black font-sans">
+  <!-- Header -->
+  <header class="fixed w-full bg-[#fafafa] shadow-sm z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="#" class="font-bold text-xl">ZynloMedia</a>
+      <nav class="hidden md:flex space-x-6" id="desktop-menu">
+        <a href="#" class="hover:text-[#A8DDFC]">Home</a>
+        <a href="#services" class="hover:text-[#A8DDFC]">Services</a>
+        <a href="#portfolio" class="hover:text-[#A8DDFC]">Portfolio</a>
+        <a href="#about" class="hover:text-[#A8DDFC]">About Us</a>
+        <a href="#contact" class="hover:text-[#A8DDFC]">Contact</a>
+      </nav>
+      <button class="md:hidden" id="menu-toggle" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+    <nav class="md:hidden hidden bg-[#fafafa]" id="mobile-menu">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li><a href="#" class="block hover:text-[#A8DDFC]">Home</a></li>
+        <li><a href="#services" class="block hover:text-[#A8DDFC]">Services</a></li>
+        <li><a href="#portfolio" class="block hover:text-[#A8DDFC]">Portfolio</a></li>
+        <li><a href="#about" class="block hover:text-[#A8DDFC]">About Us</a></li>
+        <li><a href="#contact" class="block hover:text-[#A8DDFC]">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-16 container mx-auto flex flex-col-reverse lg:flex-row items-center gap-8" id="hero">
+    <div class="lg:w-1/2 text-center lg:text-left">
+      <h1 class="text-4xl font-bold mb-4">We Grow Brisbane’s Shops & Restaurants on Social Media</h1>
+      <p class="text-gray-600 mb-6">Content creation, community building, and ad campaigns designed for local brands.</p>
+      <a href="#contact" class="inline-block bg-[#FF971D] text-white rounded-2xl px-6 py-3 hover:bg-orange-600 transition">Get Started</a>
+    </div>
+    <div class="lg:w-1/2 flex justify-center">
+      <img src="assets/hero.png" alt="social media mockup" class="w-80 rounded-2xl shadow-md" />
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16 bg-white" id="services">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Our Services</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="p-6 rounded-2xl border hover:shadow-lg transition">
+          <div class="w-12 h-12 mx-auto mb-4 text-[#A8DDFC]">
+            <img src="assets/icon-content.svg" alt="Content Creation" class="w-full h-full" />
+          </div>
+          <h3 class="font-semibold mb-2">Social Content Creation</h3>
+          <p class="text-sm text-gray-700">Custom Instagram & Facebook posts, stories, and reels to showcase your brand’s personality.</p>
+          <a href="#" class="text-[#A8DDFC] block mt-4 hover:underline">Learn More</a>
+        </div>
+        <div class="p-6 rounded-2xl border hover:shadow-lg transition">
+          <div class="w-12 h-12 mx-auto mb-4 text-[#A8DDFC]">
+            <img src="assets/icon-community.svg" alt="Community Management" class="w-full h-full" />
+          </div>
+          <h3 class="font-semibold mb-2">Community Management</h3>
+          <p class="text-sm text-gray-700">Engage with your followers, respond to comments, and foster a loyal community.</p>
+          <a href="#" class="text-[#A8DDFC] block mt-4 hover:underline">Learn More</a>
+        </div>
+        <div class="p-6 rounded-2xl border hover:shadow-lg transition">
+          <div class="w-12 h-12 mx-auto mb-4 text-[#A8DDFC]">
+            <img src="assets/icon-ads.svg" alt="Paid Ad Campaigns" class="w-full h-full" />
+          </div>
+          <h3 class="font-semibold mb-2">Paid Ad Campaigns</h3>
+          <p class="text-sm text-gray-700">Strategic Facebook & Instagram ads to drive traffic and increase sales.</p>
+          <a href="#" class="text-[#A8DDFC] block mt-4 hover:underline">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="py-16" id="portfolio">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Recent Campaigns</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="relative rounded-2xl border overflow-hidden">
+          <img src="assets/portfolio1.png" alt="Client A post" class="w-full" />
+          <div class="absolute inset-0 bg-[#A8DDFC]/50 opacity-0 hover:opacity-100 flex items-center justify-center transition">
+            <p class="text-white font-semibold">Client A – +25% followers in 4 weeks</p>
+          </div>
+        </div>
+        <div class="relative rounded-2xl border overflow-hidden">
+          <img src="assets/portfolio2.png" alt="Client B post" class="w-full" />
+          <div class="absolute inset-0 bg-[#A8DDFC]/50 opacity-0 hover:opacity-100 flex items-center justify-center transition">
+            <p class="text-white font-semibold">Client B – 3× reach increase</p>
+          </div>
+        </div>
+        <div class="relative rounded-2xl border overflow-hidden">
+          <img src="assets/portfolio3.png" alt="Client C post" class="w-full" />
+          <div class="absolute inset-0 bg-[#A8DDFC]/50 opacity-0 hover:opacity-100 flex items-center justify-center transition">
+            <p class="text-white font-semibold">Client C – $0.75 CPC</p>
+          </div>
+        </div>
+        <div class="relative rounded-2xl border overflow-hidden">
+          <img src="assets/portfolio4.png" alt="Client D post" class="w-full" />
+          <div class="absolute inset-0 bg-[#A8DDFC]/50 opacity-0 hover:opacity-100 flex items-center justify-center transition">
+            <p class="text-white font-semibold">Client D – +150 followers</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="mt-8 inline-block bg-[#A8DDFC] text-white rounded-2xl px-6 py-3 hover:bg-blue-400 transition">See Full Portfolio</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 bg-white" id="about">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-8">
+      <div class="md:w-1/3 flex justify-center">
+        <img src="assets/profile.jpg" alt="Team headshot" class="w-48 h-48 object-cover rounded-full border-4 border-[#A8DDFC]" />
+      </div>
+      <div class="md:w-2/3 text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-4">Hi, We’re ZynloMedia</h2>
+        <p class="text-gray-700 mb-4">We’re a small, dedicated team of social media strategists and content creators based in Brisbane. Our mission is to help local shops, restaurants, and lifestyle brands build meaningful online communities.</p>
+        <a href="#" class="text-[#FF971D] hover:underline">Meet the Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-16 bg-[#F9F9F9]" id="testimonials">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">What Our Clients Say</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="p-6 rounded-2xl bg-white shadow-sm">
+          <img src="assets/avatar1.png" alt="Client 1" class="w-16 h-16 mx-auto rounded-full border" />
+          <p class="italic my-4">“ZynloMedia helped us triple our Instagram engagement in just two months!”</p>
+          <p class="font-semibold">— Sarah White, Café 23</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white shadow-sm">
+          <img src="assets/avatar2.png" alt="Client 2" class="w-16 h-16 mx-auto rounded-full border" />
+          <p class="italic my-4">“Our follower count skyrocketed thanks to their creative posts!”</p>
+          <p class="font-semibold">— Mark Hill, Local Bites</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white shadow-sm">
+          <img src="assets/avatar3.png" alt="Client 3" class="w-16 h-16 mx-auto rounded-full border" />
+          <p class="italic my-4">“They manage our community so well, we can focus on running our café.”</p>
+          <p class="font-semibold">— Lisa Green, Brews & Bites</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16" id="contact">
+    <div class="container mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Ready to Grow Your Social Following?</h2>
+        <p class="text-gray-700 mb-6">Send us a message, and we’ll get back within 24 hours.</p>
+      </div>
+      <form class="space-y-4">
+        <div>
+          <label for="name" class="block mb-1">Name</label>
+          <input id="name" type="text" placeholder="Your Name" class="w-full p-2 border rounded" />
+        </div>
+        <div>
+          <label for="email" class="block mb-1">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" class="w-full p-2 border rounded" />
+        </div>
+        <div>
+          <label for="business" class="block mb-1">Business Name</label>
+          <input id="business" type="text" placeholder="Your Café or Shop Name" class="w-full p-2 border rounded" />
+        </div>
+        <div>
+          <label for="message" class="block mb-1">Message</label>
+          <textarea id="message" placeholder="Tell us about your goals" class="w-full p-2 border rounded" rows="4"></textarea>
+        </div>
+        <button type="submit" class="bg-[#FF971D] text-white px-4 py-2 rounded-2xl hover:bg-orange-600 transition">Send Message</button>
+        <p class="text-[#A8DDFC] text-sm mt-2">Or email us directly at hello@zynlomedia.com.au</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#111111] text-white py-8">
+    <div class="container mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-bold mb-2">ZynloMedia</h3>
+        <p>Brisbane, QLD</p>
+        <p>© 2025 ZynloMedia</p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Quick Links</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:text-[#A8DDFC]">Home</a></li>
+          <li><a href="#services" class="hover:text-[#A8DDFC]">Services</a></li>
+          <li><a href="#portfolio" class="hover:text-[#A8DDFC]">Portfolio</a></li>
+          <li><a href="#about" class="hover:text-[#A8DDFC]">About</a></li>
+          <li><a href="#contact" class="hover:text-[#A8DDFC]">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Follow Us</h3>
+        <div class="flex space-x-4">
+          <a href="#" aria-label="Instagram" class="hover:text-[#A8DDFC]">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.366.062 2.633.344 3.608 1.318.975.975 1.256 2.242 1.318 3.607.058 1.267.07 1.65.07 4.852s-.012 3.584-.07 4.85c-.062 1.366-.344 2.633-1.318 3.608-.975.975-2.242 1.256-3.608 1.318-1.267.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.344-3.608-1.318-.975-.975-1.256-2.242-1.318-3.608C2.212 15.584 2.2 15.2 2.2 12S2.212 8.416 2.27 7.15c.062-1.366.344-2.633 1.318-3.608C4.563 2.568 5.83 2.287 7.196 2.225 8.462 2.167 8.846 2.154 12 2.154m0-2.154C8.745 0 8.333.013 7.052.071 5.77.129 4.579.421 3.567 1.433 2.555 2.444 2.263 3.635 2.205 4.917 2.147 6.198 2.134 6.61 2.134 10s.013 3.802.071 5.083c.058 1.282.35 2.473 1.362 3.485 1.011 1.012 2.202 1.304 3.484 1.362 1.281.058 1.693.071 5.082.071s3.802-.013 5.083-.071c1.282-.058 2.473-.35 3.485-1.362 1.012-1.011 1.304-2.202 1.362-3.484.058-1.281.071-1.693.071-5.082s-.013-3.802-.071-5.083c-.058-1.282-.35-2.473-1.362-3.485C19.553.421 18.362.129 17.08.071 15.799.013 15.387 0 12 0z"></path><path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998z"></path><circle cx="18.406" cy="5.594" r="1.44"></circle></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="hover:text-[#A8DDFC]">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24H12.82V14.706h-3.411v-3.622h3.411V8.413c0-3.37 2.06-5.205 5.077-5.205 1.443 0 2.687.107 3.048.155v3.366l-2.09.001c-1.64 0-1.958.78-1.958 1.924v2.522h3.917l-.511 3.622h-3.406V24h6.676C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="hover:text-[#A8DDFC]">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14C2.2 0 0 2.2 0 4.9v14C0 21.8 2.2 24 4.9 24h14c2.7 0 4.9-2.2 4.9-4.9v-14C24 2.2 21.8 0 19 0zm-11 20H5V9h3v11zm-1.5-12.3c-.9 0-1.5-.6-1.5-1.4s.6-1.4 1.5-1.4c.8 0 1.5.6 1.5 1.4s-.6 1.4-1.5 1.4zM20 20h-3v-5.5c0-1.4-.5-2.3-1.7-2.3-.9 0-1.4.6-1.7 1.2-.1.2-.1.5-.1.8V20h-3V9h2.9v1.5c.4-.7 1.1-1.7 2.6-1.7 1.9 0 3.3 1.2 3.3 3.8V20z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
